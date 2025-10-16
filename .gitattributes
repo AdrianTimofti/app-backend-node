@@ -1,0 +1,43 @@
+# =======================================
+# Backend (Node.js)
+# =======================================
+*.js      text eol=lf
+*.ts      text eol=lf
+*.json    text eol=lf
+*.env     text eol=lf
+
+# =======================================
+# Web (Next.js + Tailwind)
+# =======================================
+*.html    text eol=lf
+*.css     text eol=lf
+*.scss    text eol=lf
+*.md      text eol=lf
+*.jsx     text eol=lf
+*.tsx     text eol=lf
+
+# =======================================
+# Mobile (Flutter / Dart)
+# =======================================
+*.dart    text eol=lf
+*.yaml    text eol=lf
+
+# =======================================
+# Ignore binaries
+# =======================================
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.ico     binary
+*.gif     binary
+*.mp4     binary
+*.mov     binary
+
+# =======================================
+# Node_modules / build / IDE
+# =======================================
+node_modules/     export-ignore
+build/            export-ignore
+*.iml             export-ignore
+.idea/            export-ignore
+.vscode/          export-ignore
