@@ -2,11 +2,19 @@ import express from "express";
 import mongoose from 'mongoose';
 import cors from "cors";
 import dotenv from "dotenv";
+import authRoutes from './routes/auth.js';
 
 dotenv.config(); // citește .env
 
 const app = express();
+
+app.use(express.json()); // ca să poți primi req.body
+
+// Routes
+app.use("/auth", authRoutes);
+
 const port = process.env.PORT || 4000;
+
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
