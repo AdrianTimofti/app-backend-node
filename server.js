@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import cors from "cors";
 import dotenv from "dotenv";
 import authRoutes from './routes/auth.js';
+import leaguesRoutes from "./routes/leagues.js";
 
 dotenv.config(); // citește .env
 
@@ -12,6 +13,8 @@ app.use(express.json()); // ca să poți primi req.body
 
 // Routes
 app.use("/auth", authRoutes);
+app.use("/leagues", leaguesRoutes);
+
 
 const port = process.env.PORT || 4000;
 
