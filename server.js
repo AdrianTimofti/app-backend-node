@@ -15,6 +15,10 @@ app.use("/auth", authRoutes);
 
 const port = process.env.PORT || 4000;
 
+import matchesRoutes from "./routes/matches.js";
+app.use("/matches", matchesRoutes);
+
+
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
